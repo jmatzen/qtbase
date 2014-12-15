@@ -63,7 +63,7 @@
 
 #include <qpa/qwindowsysteminterface.h>
 
-#include "../../../qtest-config.h"
+#include "qtest-config.h"
 
 QT_BEGIN_NAMESPACE
 static QWindowSystemInterface::TouchPoint touchPoint(const QTouchEvent::TouchPoint& pt)

@@ -37,7 +37,7 @@
 #include "private/qnoncontiguousbytedevice_p.h"
 #include <QAuthenticator>
 
-#include "../../../network-settings.h"
+#include "network-settings.h"
 
 class tst_QHttpNetworkConnection: public QObject
 {

@@ -86,7 +86,7 @@ Q_DECLARE_METATYPE(QSharedPointer<char>)
 #endif
 #include <time.h>
 
-#include "../../../network-settings.h"
+#include "network-settings.h"
 
 Q_DECLARE_METATYPE(QAuthenticator*)
 #ifndef QT_NO_NETWORKPROXY
