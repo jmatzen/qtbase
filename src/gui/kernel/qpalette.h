@@ -87,10 +87,11 @@ public:
                      Highlight, HighlightedText,
                      Link, LinkVisited,
                      AlternateBase,
+                     AlternateHighlight,
                      NoRole,
                      ToolTipBase, ToolTipText,
                      NColorRoles = ToolTipText + 1,
-                     Foreground = WindowText, Background = Window
+                     Foreground = WindowText, Background = Window,
                    };
     Q_ENUM(ColorRole)
 
