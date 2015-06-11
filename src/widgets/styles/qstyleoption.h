@@ -420,6 +420,7 @@ public:
     QString text;
     ViewItemPosition viewItemPosition;
     QBrush backgroundBrush;
+    int current;
 
     QStyleOptionViewItem();
     QStyleOptionViewItem(const QStyleOptionViewItem &other) : QStyleOption(Version, Type) { *this = other; }

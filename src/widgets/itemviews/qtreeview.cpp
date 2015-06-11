@@ -1494,7 +1494,7 @@ void QTreeView::drawTree(QPainter *painter, const QRegion &region) const
             option.state = state | (viewItems.at(i).expanded ? QStyle::State_Open : QStyle::State_None)
                                  | (viewItems.at(i).hasChildren ? QStyle::State_Children : QStyle::State_None)
                                  | (viewItems.at(i).hasMoreSiblings ? QStyle::State_Sibling : QStyle::State_None);
-            d->current = i;
+            option.current = d->current = i;
             d->spanning = viewItems.at(i).spanning;
             if (!multipleRects || !drawn.contains(i)) {
                 drawRow(painter, option, viewItems.at(i).index);
