@@ -48,6 +48,8 @@
 #   include <QtCore/qabstractitemmodel.h>
 #endif
 
+#include <functional>
+
 QT_BEGIN_NAMESPACE
 
 
@@ -422,8 +424,16 @@ public:
     QBrush backgroundBrush;
     int current;
 
+    std::function<QBrush(
+      QPalette::ColorGroup,
+      const QStyleOption&)> fillColorFn;
+
     QStyleOptionViewItem();
-    QStyleOptionViewItem(const QStyleOptionViewItem &other) : QStyleOption(Version, Type) { *this = other; }
+    QStyleOptionViewItem(const QStyleOptionViewItem &other)
+      : QStyleOption(Version, Type)
+    {
+      *this = other; 
+    }
 
 protected:
     QStyleOptionViewItem(int version);

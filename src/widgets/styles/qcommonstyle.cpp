@@ -646,7 +646,17 @@ void QCommonStyle::drawPrimitive(PrimitiveElement pe, const QStyleOption *opt, Q
 
             if ((vopt->state & QStyle::State_Selected) && proxy()->styleHint(QStyle::SH_ItemView_ShowDecorationSelected, opt, widget))
             {
-              p->fillRect(vopt->rect, vopt->palette.brush(cg, QPalette::Highlight));
+              QBrush b;
+              if (vopt->fillColorFn)
+              {
+                b = vopt->fillColorFn(cg, *vopt);
+              }
+              else
+              {
+                b = vopt->palette.brush(cg, QPalette::Highlight);
+              }
+
+              p->fillRect(vopt->rect, b);
             }
             else if (vopt->features & QStyleOptionViewItem::Alternate)
             {
@@ -662,7 +672,19 @@ void QCommonStyle::drawPrimitive(PrimitiveElement pe, const QStyleOption *opt, Q
                 cg = QPalette::Inactive;
 
             if (vopt->showDecorationSelected && (vopt->state & QStyle::State_Selected)) {
-                p->fillRect(vopt->rect, vopt->palette.brush(cg, QPalette::Highlight));
+              QBrush b;
+              if (vopt->fillColorFn)
+              {
+                b = vopt->fillColorFn(cg, *vopt);
+              }
+              else
+              {
+                b = vopt->palette.brush(cg, QPalette::Highlight);
+              }
+
+              p->fillRect(vopt->rect, b);
+
+                //p->fillRect(vopt->rect, vopt->palette.brush(cg, QPalette::Highlight));
             } else {
                 if (vopt->backgroundBrush.style() != Qt::NoBrush) {
                     QPointF oldBO = p->brushOrigin();
