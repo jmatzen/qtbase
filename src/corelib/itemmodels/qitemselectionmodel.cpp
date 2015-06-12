@@ -415,10 +415,20 @@ void QItemSelection::select(const QModelIndex &topLeft, const QModelIndex &botto
     if (!topLeft.isValid() || !bottomRight.isValid())
         return;
 
-    if ((topLeft.model() != bottomRight.model())
-        || topLeft.parent() != bottomRight.parent()) {
-        qWarning("Can't select indexes from different model or with different parents");
-        return;
+    auto m1 = topLeft.model();
+    auto m2 = bottomRight.model();
+    auto p1 = topLeft.parent();
+    auto p2 = bottomRight.parent();
+
+    if (m1 != m2)
+    {
+      qWarning("Can't select indexes from different model");
+      return;
+    }
+    if (p1 != p2)
+    {
+      qWarning("Can't select indexes from different parents");
+      return;
     }
     if (topLeft.row() > bottomRight.row() || topLeft.column() > bottomRight.column()) {
         int top = qMin(topLeft.row(), bottomRight.row());

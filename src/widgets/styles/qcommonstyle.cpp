@@ -644,10 +644,14 @@ void QCommonStyle::drawPrimitive(PrimitiveElement pe, const QStyleOption *opt, Q
             if (cg == QPalette::Normal && !(vopt->state & QStyle::State_Active))
                 cg = QPalette::Inactive;
 
-            if ((vopt->state & QStyle::State_Selected) &&  proxy()->styleHint(QStyle::SH_ItemView_ShowDecorationSelected, opt, widget))
-                p->fillRect(vopt->rect, vopt->palette.brush(cg, QPalette::Highlight));
+            if ((vopt->state & QStyle::State_Selected) && proxy()->styleHint(QStyle::SH_ItemView_ShowDecorationSelected, opt, widget))
+            {
+              p->fillRect(vopt->rect, vopt->palette.brush(cg, QPalette::Highlight));
+            }
             else if (vopt->features & QStyleOptionViewItem::Alternate)
-                p->fillRect(vopt->rect, vopt->palette.brush(cg, QPalette::AlternateBase));
+            {
+              p->fillRect(vopt->rect, vopt->palette.brush(cg, QPalette::AlternateBase));
+            }
         }
         break;
     case PE_PanelItemViewItem:
