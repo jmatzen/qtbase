@@ -10,7 +10,6 @@ configure ^
 	-mp ^
 	-debug-and-release ^
 	-platform win32-msvc2013 ^
-	-prefix "msvc2013_out" ^
 	-skip qt3d ^
 	-skip qtcanvas3d ^
 	-skip qtmultimedia ^
