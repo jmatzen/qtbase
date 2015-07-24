@@ -4,8 +4,6 @@ configure ^
 	-nomake tests ^
 	-confirm-license ^
 	-c++11 ^
-	-opengl desktop ^
-	-no-angle ^
 	-no-sql-sqlite ^
 	-mp ^
 	-debug-and-release ^
