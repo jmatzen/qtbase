@@ -8,6 +8,9 @@ configure ^
 	-mp ^
 	-debug-and-release ^
 	-platform win32-msvc2013 ^
+	-opengl desktop ^
+	-no-angle ^
+	-no-icu ^
 	-skip qt3d ^
 	-skip qtcanvas3d ^
 	-skip qtmultimedia ^
