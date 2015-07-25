@@ -6,7 +6,7 @@ configure ^
 	-c++11 ^
 	-no-sql-sqlite ^
 	-mp ^
-	-debug-and-release ^
+	-debug ^
 	-platform win32-msvc2013 ^
 	-opengl desktop ^
 	-no-angle ^
@@ -29,5 +29,7 @@ configure ^
 	-skip qtwebsockets ^
 	-skip qttools ^
 	-skip qtdeclarative ^
-	-skip qtlocation
+	-skip qtlocation ^
+	-skip qtxmlpatterns ^
+	-skip qtwinextras
 	
