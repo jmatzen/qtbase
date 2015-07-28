@@ -11,25 +11,39 @@ configure ^
 	-opengl desktop ^
 	-no-angle ^
 	-no-icu ^
+	-skip qtandroidextras ^
+	-skip qtmacextras ^
+	-skip qtx11extras ^
+	-skip qtsvg ^
+	-skip qtxmlpatterns ^
+	-skip qtdeclarative ^
+	-skip qtquickcontrols ^
+	-skip qtmultimedia ^
+	-skip qtwinextras ^
+	-skip qtactiveqt ^
+	-skip qtsystems ^
+	-skip qtlocation ^
+	-skip qtsensors ^
+	-skip qtconnectivity ^
+	-skip qtfeedback ^
+	-skip qtpim ^
+	-skip qtwebsockets ^
+	-skip qtwebchannel ^
+	-skip qtwebkit ^
+	-skip qttools ^
+	-skip qtwebkit-examples ^
+	-skip qtimageformats ^
 	-skip qt3d ^
 	-skip qtcanvas3d ^
-	-skip qtmultimedia ^
-	-skip qtpim ^
-	-skip qtqa ^
-	-skip qtquick1 ^
-	-skip qtquickcontrols ^
+	-skip qtgraphicaleffects ^
 	-skip qtscript ^
-	-skip qtsensors ^
+	-skip qtquick1 ^
+	-skip qtdocgallery ^
+	-skip qtwayland ^
 	-skip qtserialport ^
-	-skip qtsvg ^
-	-skip qtwebchannel ^
+	-skip qtenginio ^
 	-skip qtwebengine ^
-	-skip qtwebkit ^
-	-skip qtwebkit-examples ^
-	-skip qtwebsockets ^
-	-skip qttools ^
-	-skip qtdeclarative ^
-	-skip qtlocation ^
-	-skip qtxmlpatterns ^
-	-skip qtwinextras
+	-skip qttranslations ^
+	-skip qtdoc ^
+	-skip qtqa 
 	
