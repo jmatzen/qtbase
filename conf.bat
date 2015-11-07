@@ -6,8 +6,8 @@ configure ^
 	-c++11 ^
 	-no-sql-sqlite ^
 	-mp ^
-	-debug ^
-	-platform win32-msvc2013 ^
+	-debug-and-release ^
+	-platform win32-msvc2015 ^
 	-opengl desktop ^
 	-no-angle ^
 	-no-icu ^
