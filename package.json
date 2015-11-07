@@ -51,13 +51,13 @@
 	["include/QtXml/5.5.1/*.h", "include/QtXml/5.5.1"],
 	["include/QtXml/5.5.1/QtXml/*.h", "include/QtXml/5.5.1/QtXml"],
 	["include/QtXml/5.5.1/QtXml/private/*.h", "include/QtXml/5.5.1/QtXml/private"],
-	["include/QtZlib/*.h", "include/QtZlib"],
+	["include/QtZlib/*.h", "include/QtZlib"]
 	],
 	"win32-x64-vc140-debug": 
 	[
 		["lib/*.lib", "lib"],
 		["lib/*.pdb", "lib"],
 		["bin/*.exe", "bin"],
-		["bin/*.dll", "bin"],
+		["bin/*.dll", "bin"]
 	]
 }
