@@ -11,7 +11,7 @@ configure ^
 	-opengl desktop ^
 	-no-angle ^
 	-no-icu ^
-	-install qt5install ^
+	-prefix qt5install ^
 	-skip qtandroidextras ^
 	-skip qtmacextras ^
 	-skip qtx11extras ^

@@ -1,14 +1,13 @@
 {
 	"noarch":
 	[
-	["include/**/*.h", "include"],
-	["src/**/*.h", "src"]
+		["bin/qt5install/include/**", "include"]
 	],
 	"win32-x64-vc140-debug": 
 	[
-		["lib/*.lib", "lib"],
-		["lib/*.pdb", "lib"],
-		["bin/*.exe", "bin"],
-		["bin/*.dll", "bin"]
+		["bin/qt5install/lib/**", "lib"],
+		["bin/qt5install/bin/**", "bin"],
+		["bin/qt5install/plugins/**", "plugins"]
+
 	]
 }
