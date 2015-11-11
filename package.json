@@ -1,13 +1,35 @@
 {
-	"noarch":
+	"win32-x64-vc140": 
 	[
-		["bin/qt5install/include/**", "include"]
-	],
-	"win32-x64-vc140-debug": 
-	[
-		["bin/qt5install/lib/**", "lib"],
-		["bin/qt5install/bin/**", "bin"],
-		["bin/qt5install/plugins/**", "plugins"]
-
+	["bin/qt5install/include/**", "include"],
+	["bin/qt5install/bin/**", "bin"],
+	["bin/qt5install/plugins/**", "plugins"],
+	["bin/qt5install/lib/Qt5Bootstrap.lib", "lib/release"],
+	["bin/qt5install/lib/Qt5Concurrent.lib", "lib/release"],
+	["bin/qt5install/lib/Qt5Concurrentd.lib", "lib/debug"],
+	["bin/qt5install/lib/Qt5Core.lib", "lib/release"],
+	["bin/qt5install/lib/Qt5Cored.lib", "lib/debug"],
+	["bin/qt5install/lib/Qt5Gui.lib", "lib/release"],
+	["bin/qt5install/lib/Qt5Guid.lib", "lib/debug"],
+	["bin/qt5install/lib/Qt5Network.lib", "lib/release"],
+	["bin/qt5install/lib/Qt5Networkd.lib", "lib/debug"],
+	["bin/qt5install/lib/Qt5OpenGL.lib", "lib/release"],
+	["bin/qt5install/lib/Qt5OpenGLExtensions.lib", "lib/release"],
+	["bin/qt5install/lib/Qt5OpenGLExtensionsd.lib", "lib/debug"],
+	["bin/qt5install/lib/Qt5OpenGLd.lib", "lib/debug"],
+	["bin/qt5install/lib/Qt5PlatformSupport.lib", "lib/release"],
+	["bin/qt5install/lib/Qt5PlatformSupportd.lib", "lib/debug"],
+	["bin/qt5install/lib/Qt5PrintSupport.lib", "lib/release"],
+	["bin/qt5install/lib/Qt5PrintSupportd.lib", "lib/debug"],
+	["bin/qt5install/lib/Qt5Sql.lib", "lib/release"],
+	["bin/qt5install/lib/Qt5Sqld.lib", "lib/debug"],
+	["bin/qt5install/lib/Qt5Test.lib", "lib/release"],
+	["bin/qt5install/lib/Qt5Testd.lib", "lib/debug"],
+	["bin/qt5install/lib/Qt5Widgets.lib", "lib/release"],
+	["bin/qt5install/lib/Qt5Widgetsd.lib", "lib/debug"],
+	["bin/qt5install/lib/Qt5Xml.lib", "lib/release"],
+	["bin/qt5install/lib/Qt5Xmld.lib", "lib/debug"],
+	["bin/qt5install/lib/qtmain.lib", "lib/release"],
+	["bin/qt5install/lib/qtmaind.lib", "lib/debug"]
 	]
 }
