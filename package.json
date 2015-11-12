@@ -30,6 +30,8 @@
 		["bin/qt5install/lib/Qt5Xml.lib", "lib/release/Qt5Xml.lib"],
 		["bin/qt5install/lib/Qt5Xmld.lib", "lib/debug/Qt5Xmld.lib"],
 		["bin/qt5install/lib/qtmain.lib", "lib/release/qtmain.lib"],
-		["bin/qt5install/lib/qtmaind.lib", "lib/debug/qtmaind.lib"]
+		["bin/qt5install/lib/qtmaind.lib", "lib/debug/qtmaind.lib"],
+		["bin/qt5install/lib/cmake/**", "lib/debug/cmake"],
+		["bin/qt5install/lib/cmake/**", "lib/release/cmake"]
 	]
 }
