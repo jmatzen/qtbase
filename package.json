@@ -4,6 +4,7 @@
 		["bin/qt5install/include/**", "include"],
 		["bin/qt5install/bin/**", "bin"],
 		["bin/qt5install/plugins/**", "plugins"],
+		["bin/qt5install/mkspecs/**", "mkspecs"],
 		["bin/qt5install/lib/Qt5Bootstrap.lib", "lib/release/Qt5Bootstrap.lib"],
 		["bin/qt5install/lib/Qt5Concurrent.lib", "lib/release/Qt5Concurrent.lib"],
 		["bin/qt5install/lib/Qt5Concurrentd.lib", "lib/debug/Qt5Concurrentd.lib"],
